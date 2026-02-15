@@ -17,7 +17,7 @@
   --content-gap: 20px;
   /* space between header and content */
 
-  --desktop-scale: 0.85;
+  --desktop-scale: 0.95;
 
   /* Nav spacing (compresses on smaller widths) */
   --nav-gap: clamp(4px, 3vw, 56px);
