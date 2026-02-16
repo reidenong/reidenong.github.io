@@ -31,15 +31,18 @@ html[data-theme="dark"] {
 
 /* Base font sizing (rem-based typography) */
 html {
-  font-size: 16px; /* baseline */
+  font-size: 16px;
+  /* baseline */
   color-scheme: light dark;
-  scrollbar-gutter: stable; /* keeps layout from shifting when scrollbar appears */
+  scrollbar-gutter: stable;
+  /* keeps layout from shifting when scrollbar appears */
 }
 
 /* Desktop: +2px text */
 @media (min-width: 900px) {
   html {
-    font-size: 18px; /* 16 + 2 */
+    font-size: 18px;
+    /* 16 + 2 */
   }
 
   /* Scale header */
@@ -67,7 +70,8 @@ html {
 /* Responsive adjustments (tighter nav + bigger text) */
 @media (max-width: 520px) {
   html {
-    font-size: 20px; /* 16 + 4 */
+    font-size: 20px;
+    /* 16 + 4 */
   }
 
   :root {
@@ -88,13 +92,15 @@ html {
 
 /* Link colors */
 a {
-  color: #0645ad; /* classic hyperlink blue */
+  color: #0645ad;
+  /* classic hyperlink blue */
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 html[data-theme="dark"] a {
-  color: #6ea8ff; /* softer blue on dark */
+  color: #6ea8ff;
+  /* softer blue on dark */
 }
 
 a:hover {
@@ -111,7 +117,7 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", sans-serif;
   line-height: 1.55;
 }
 
@@ -135,8 +141,10 @@ body {
 }
 
 .site-title {
-  font-size: 32px; /* unchanged per request */
-  font-weight: 500; /* toned down */
+  font-size: 32px;
+  /* unchanged per request */
+  font-weight: 500;
+  /* toned down */
   margin: 0 0 14px 0;
 }
 
@@ -149,21 +157,22 @@ body {
 }
 
 .nav a {
-  font-size: 20px; /* unchanged per request */
+  font-size: 20px;
+  /* unchanged per request */
   white-space: nowrap;
 }
 
 /* Active section */
 .nav a[aria-current="page"] {
-  font-weight: 700; /* toned down from 1000 */
+  font-weight: 700;
+  /* toned down from 1000 */
 }
 
 /* Main content column */
 .main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: calc(env(safe-area-inset-top) + var(--header-h) + var(--content-gap))
-    var(--pad-x) 64px var(--pad-x);
+  padding: calc(env(safe-area-inset-top) + var(--header-h) + var(--content-gap)) var(--pad-x) 64px var(--pad-x);
 }
 
 /* Paragraph-like defaults */
@@ -173,7 +182,8 @@ p {
 }
 
 .list {
-  font-size: 1.125rem; /* 18px at base 16px */
+  font-size: 1.125rem;
+  /* 18px at base 16px */
   padding-left: 22px;
 }
 
@@ -230,8 +240,10 @@ ul {
 li {
   font-size: 1rem;
   line-height: 1.5;
-  padding-left: 1.2em; /* space for bullet */
-  text-indent: -1.2em; /* hanging indent */
+  padding-left: 1.2em;
+  /* space for bullet */
+  text-indent: -1.2em;
+  /* hanging indent */
 }
 
 li::before {
@@ -253,12 +265,13 @@ h2 {
 
 /* This keeps your tighter paragraph spacing without hardcoding px font sizes */
 p {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   margin-top: 0px;
 }
 
 .experience {
-  position: relative; /* needed for top-right positioning */
+  position: relative;
+  /* needed for top-right positioning */
   /* border: 1px solid hsl(0, 0%, 45%); */
   padding: 8px;
   margin-bottom: 24px;
